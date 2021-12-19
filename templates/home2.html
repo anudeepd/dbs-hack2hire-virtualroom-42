@@ -1,0 +1,7 @@
+<html>
+    <form  method="POST" action="{% url 'neworder' %}">
+        {% csrf_token %}
+        <input  name="student" type="text">
+        <button type="submit">submit</button>
+    </form>
+    </html>
